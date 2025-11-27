@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import style from "./home.module.css";
+import style from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [products, setProducts] = useState([]);

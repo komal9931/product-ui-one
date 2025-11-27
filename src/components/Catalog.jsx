@@ -144,7 +144,7 @@
 // export default Catalog;
 
 import React, { useEffect, useState } from "react";
-import style from "./catalog.module.css";
+import style from "./Catalog.module.css";
 
 const ChevronDown = () => (
   <svg

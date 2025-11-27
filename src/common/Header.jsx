@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./header.module.css";
+import style from "./Header.module.css";
 
 const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
