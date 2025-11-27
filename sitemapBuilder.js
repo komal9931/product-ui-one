@@ -1,14 +1,12 @@
 // const fs = require("fs");
 import fs from "fs";
 
-// Replace with your actual website URL
-const BASE_URL = "https://prodpankaj.netlify.app/";
+const BASE_URL = "https://prodpankaj.netlify.app"; // NO ending slash
 
-// Static routes
 const routes = ["/", "/catlog"];
 
-// If you want products pages, list all product IDs manually or dynamically
-const productIds = ["1", "2", "3"]; // replace with your actual product IDs
+const productIds = ["1", "2", "3"];
+
 productIds.forEach((id) => routes.push(`/products/${id}`));
 
 function generateSitemap() {
@@ -17,15 +15,14 @@ function generateSitemap() {
 
   routes.forEach((path) => {
     xml += `  <url>\n`;
-    xml += `    <loc>${BASE_URL}${path}</loc>\n`;
+    xml += `    <loc>${BASE_URL}${path}</loc>\n`; // now correct
     xml += `    <priority>0.8</priority>\n`;
     xml += `  </url>\n`;
   });
 
   xml += `</urlset>`;
-
   fs.writeFileSync("./public/sitemap.xml", xml);
-  console.log("✅ sitemap.xml generated in public folder");
+  console.log("✅ sitemap.xml generated correctly");
 }
 
 generateSitemap();
