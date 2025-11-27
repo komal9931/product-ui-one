@@ -5,9 +5,37 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Home Page -->
   <url>
     <loc>https://jouproduct.netlify.app/</loc>
-    <lastmod>2025-11-27T09:49:22+00:00</lastmod>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Catalog Page -->
+  <url>
+    <loc>https://jouproduct.netlify.app/catalog</loc>
+    <priority>0.90</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Example Product Pages (REPLACE with real IDs) -->
+  <url>
+    <loc>https://jouproduct.netlify.app/products/1</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://jouproduct.netlify.app/products/2</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://jouproduct.netlify.app/products/3</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>
