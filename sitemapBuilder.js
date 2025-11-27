@@ -1,7 +1,7 @@
 // const fs = require("fs");
 import fs from "fs";
 
-const BASE_URL = "https://prodpankaj.netlify.app"; // NO ending slash
+const BASE_URL = "https://jaskas-you.netlify.app"; // NO ending slash
 
 const routes = ["/", "/catlog"];
 

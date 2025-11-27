@@ -46,6 +46,11 @@
   align-items: center;
   gap: 1.2rem;
 }
+.active {
+  color: #ff4d4d;  /* your highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #ff4d4d;
+}
 
 .icons span {
   font-size: 1.4rem;
