@@ -1,0 +1,240 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ====== MAIN PRODUCT LAYOUT ====== */
+.container {
+  display: flex;
+  gap: 3rem;
+  width: 90%;
+  margin: 2rem auto;
+  font-family: "Poppins", sans-serif;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ====== TEXT AND BUTTONS ====== */
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sizeSection p {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.sizes {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.sizeBtn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.sizeBtn:hover {
+  border-color: #000;
+}
+
+.activeSize {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.qtyBtn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+
+.qtyBtn:hover {
+  background: #f0f0f0;
+}
+
+.qty {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.addCartBtn {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.addCartBtn:hover {
+  background: #333;
+}
+
+.buyNowBtn {
+  background: white;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.buyNowBtn:hover {
+  background: #000;
+  color: white;
+}
+
+.extraInfo {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.desc {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ====== RELATED PRODUCTS ====== */
+.relatedSection {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.relatedSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardImageWrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 0.8rem;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.cardPrice {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .sizes {
+    justify-content: center;
+  }
+
+  .actionButtons {
+    align-items: center;
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
